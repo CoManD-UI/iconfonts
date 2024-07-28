@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('logos-iconfont.woff?hbqcvr') format('woff');
+  src:  url('logos-iconfont.woff?cu3x60') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,28 +24,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-freelancermap:before {
+  content: "\b127";
+}
+.icon-wellfound:before {
+  content: "\b128";
+}
 .icon-x:before {
   content: "\b121";
 }
-.icon-x-circle .path1:before {
+.icon-x-circle:before {
   content: "\b122";
-  color: rgb(0, 0, 0);
-}
-.icon-x-circle .path2:before {
-  content: "\b123";
-  margin-left: -0.998046875em;
-  color: rgb(255, 255, 255);
 }
 .icon-freelance:before {
-  content: "\e903";
+  content: "\b126";
 }
-.icon-freelancermap:before {
+.icon-freelancermap1:before {
   content: "\b124";
-  color: #fff;
 }
-.icon-wellfound:before {
+.icon-wellfound1:before {
   content: "\b125";
-  color: #fff;
 }
 .icon-amazon:before {
   content: "\b100";

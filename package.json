@@ -1,17 +1,13 @@
 {
   "name": "comand-ui-iconfonts",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "license": "GPL-3.0-only",
+  "author": "CoManD UI",
   "description": "different iconfonts used in comand-ui",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CoManD-UI/iconfonts.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/CoManD-UI/iconfonts/issues"
   },
