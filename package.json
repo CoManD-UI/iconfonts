@@ -1,15 +1,12 @@
 {
   "name": "comand-ui-iconfonts",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "license": "GPL-3.0-only",
   "author": "CoManD UI",
   "scripts": {
-    "publish": "npm publish",
-    "prepublishOnly": "npm run build-lib",
     "dev": "vite",
     "build": "vite build",
-    "build-lib": "vite build && gulp",
     "preview": "vite preview"
   },
   "description": "different iconfonts used in comand-ui",
@@ -22,7 +19,7 @@
   },
   "homepage": "https://github.com/CoManD-UI/iconfonts#readme",
   "dependencies": {
-    "comand-component-library": "^4.0.25",
+    "comand-component-library": "^4.0.26",
     "comand-frontend-framework": "^4.0.63",
     "comand-ui-iconfonts": "^1.0.3",
     "vue": "^3.2.31"

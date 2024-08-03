@@ -66,12 +66,12 @@
 import logosIcons from "./src/fonts/logos-iconfont/logos-icon-classes.json"
 
 export default {
-    name: "IconFont",
+    name: "IconFonts",
     data() {
         return {
             filterIcons: "",
-            //sortedFrameworkIcons: this.sortIcons(baseIcons),
-            //sortedEditmodeIcons: this.sortIcons(editmodeIcons),
+            sortedFrameworkIcons: [], //this.sortIcons(baseIcons),
+            sortedEditmodeIcons: [], //this.sortIcons(editmodeIcons),
             sortedLogosIcons: this.sortIcons(logosIcons),
             filterIconsByFont: [1, 2],
             listOfIconfonts: [
