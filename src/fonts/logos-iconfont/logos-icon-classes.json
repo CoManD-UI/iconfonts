@@ -1,146 +1,38 @@
 [
-    {
-        "name": "x",
-        "iconClass": "icon-x"
-    },
-    {
-        "name": "x-circle .path1",
-        "iconClass": "icon-x-circle .path1"
-    },
-    {
-        "name": "x-circle .path2",
-        "iconClass": "icon-x-circle .path2"
-    },
-    {
-        "name": "freelance",
-        "iconClass": "icon-freelance"
-    },
-    {
-        "name": "freelancermap",
-        "iconClass": "icon-freelancermap"
-    },
-    {
-        "name": "wellfound",
-        "iconClass": "icon-wellfound"
-    },
-    {
-        "name": "amazon",
-        "iconClass": "icon-amazon"
-    },
-    {
-        "name": "android",
-        "iconClass": "icon-android"
-    },
-    {
-        "name": "apple",
-        "iconClass": "icon-apple"
-    },
-    {
-        "name": "chrome",
-        "iconClass": "icon-chrome"
-    },
-    {
-        "name": "css3",
-        "iconClass": "icon-css3"
-    },
-    {
-        "name": "facebook",
-        "iconClass": "icon-facebook"
-    },
-    {
-        "name": "facebook-square",
-        "iconClass": "icon-facebook-square"
-    },
-    {
-        "name": "firefox",
-        "iconClass": "icon-firefox"
-    },
-    {
-        "name": "flickr",
-        "iconClass": "icon-flickr"
-    },
-    {
-        "name": "git",
-        "iconClass": "icon-git"
-    },
-    {
-        "name": "google-analytics",
-        "iconClass": "icon-google-analytics"
-    },
-    {
-        "name": "html5",
-        "iconClass": "icon-html5"
-    },
-    {
-        "name": "instagram",
-        "iconClass": "icon-instagram"
-    },
-    {
-        "name": "linkedin",
-        "iconClass": "icon-linkedin"
-    },
-    {
-        "name": "linkedin-square",
-        "iconClass": "icon-linkedin-square"
-    },
-    {
-        "name": "linux",
-        "iconClass": "icon-linux"
-    },
-    {
-        "name": "meta",
-        "iconClass": "icon-meta"
-    },
-    {
-        "name": "opera",
-        "iconClass": "icon-opera"
-    },
-    {
-        "name": "paypal",
-        "iconClass": "icon-paypal"
-    },
-    {
-        "name": "safari",
-        "iconClass": "icon-safari"
-    },
-    {
-        "name": "skype",
-        "iconClass": "icon-skype"
-    },
-    {
-        "name": "tumblr",
-        "iconClass": "icon-tumblr"
-    },
-    {
-        "name": "tumblr-square",
-        "iconClass": "icon-tumblr-square"
-    },
-    {
-        "name": "twitch",
-        "iconClass": "icon-twitch"
-    },
-    {
-        "name": "whatsapp",
-        "iconClass": "icon-whatsapp"
-    },
-    {
-        "name": "windows8",
-        "iconClass": "icon-windows8"
-    },
-    {
-        "name": "xing",
-        "iconClass": "icon-xing"
-    },
-    {
-        "name": "xing-square",
-        "iconClass": "icon-xing-square"
-    },
-    {
-        "name": "youtube",
-        "iconClass": "icon-youtube"
-    },
-    {
-        "name": "github",
-        "iconClass": "icon-github"
-    }
+  "x",
+  "x-circle .path1",
+  "x-circle .path2",
+  "freelance",
+  "freelancermap",
+  "wellfound",
+  "amazon",
+  "android",
+  "apple",
+  "chrome",
+  "css3",
+  "facebook",
+  "facebook-square",
+  "firefox",
+  "flickr",
+  "git",
+  "google-analytics",
+  "html5",
+  "instagram",
+  "linkedin",
+  "linkedin-square",
+  "linux",
+  "meta",
+  "opera",
+  "paypal",
+  "safari",
+  "skype",
+  "tumblr",
+  "tumblr-square",
+  "twitch",
+  "whatsapp",
+  "windows8",
+  "xing",
+  "xing-square",
+  "youtube",
+  "github"
 ]

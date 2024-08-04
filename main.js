@@ -23,8 +23,6 @@ import './src/fonts/editmode-iconfont/editmode-iconfont.css'
 /* import additional iconfont containing company-logos */
 import './src/fonts/logos-iconfont/logos-iconfont.css'
 
-
-
 /* import additional iconfont containing editmode-icons */
 import 'comand-ui-iconfonts/editmode-iconfont/editmode-iconfont.css'
 /* begin imports from prims-plugin (for styling syntax) ---------------------------------------------------------------------------------------- */
@@ -33,6 +31,9 @@ import 'comand-ui-iconfonts/editmode-iconfont/editmode-iconfont.css'
 
 /* import css for demopage only */
 import 'comand-frontend-framework/demopage-only.css'
+
+// import clickout-event
+import "clickout-event"
 
 createApp(App).mount('#app')
 

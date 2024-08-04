@@ -1,7 +1,7 @@
 <template>
     <main>
         <CmdWidthLimitationWrapper id="iconfont-overview">
-            <h1>Iconfonts</h1>
+            <h1>CoManD-UI-Iconfonts</h1>
             <p>
                 The icons were converted with the great, free <a href="https://icomoon.io/app/" target="icomoon">IcoMoon-App</a>.
                 To use an icon add <code>&lt;span class="icon-<em>name</em>"&gt;&lt;/span&gt;</code> in html. The <em>name</em> of an icon is listed below each icon.
@@ -32,37 +32,45 @@
                     v-model="filterIconsByFont"
                 />
             </div>
-            <h2>Framework Icons</h2>
-            <div class="grid-container-create-columns">
-                <div v-for="(icon, index) in filteredFrameworkIcons" :key="index" class="icon">
-                    <span :class="icon.iconClass"></span>
-                    <span>{{ icon.name }}</span>
+            <ul class="filter">Available Iconfonts:
+                <li><a href="#framework-icons">Framework ({{ filteredFrameworkIcons.length }})</a></li>
+                <li><a href="#editmode-icons">Editmode ({{ filteredEditmodeIcons.length }})</a></li>
+                <li><a href="#logos-icons">Logos ({{ filteredLogosIcons.length }})</a></li>
+            </ul>
+            <h2 id="framework-icons">Framework Icons</h2>
+            <div v-if="filteredFrameworkIcons.length" class="grid-container-create-columns">
+                <div v-for="(iconName, index) in filteredFrameworkIcons" :key="index" class="icon">
+                    <span :class="'icon-' + iconName"></span>
+                    <span>{{ iconName }}</span>
                 </div>
             </div>
+            <p v-else class="system-message warning">No matches found in this font!</p>
             <hr/>
-            <h2>Editmode Icons</h2>
-            <div class="grid-container-create-columns">
-                <div v-for="(icon, index) in filteredEditmodeIcons" :key="index" class="icon">
-                    <span :class="icon.iconClass"></span>
-                    <span>{{ icon.name }}</span>
+            <h2 id="editmode-icons">Editmode Icons</h2>
+            <div v-if="filteredEditmodeIcons.length" class="grid-container-create-columns">
+                <div v-for="(iconName, index) in filteredEditmodeIcons" :key="index" class="icon">
+                    <span :class="'icon-' + iconName"></span>
+                    <span>{{ iconName }}</span>
                 </div>
             </div>
+            <p  v-else class="system-message warning">No matches found in this font!</p>
             <hr/>
-            <h2>Logos Icons</h2>
-            <div class="grid-container-create-columns">
-                <div v-for="(icon, index) in filteredLogosIcons" :key="index" class="icon">
-                    <span :class="icon.iconClass"></span>
-                    <span>{{ icon.name }}</span>
+            <h2 id="logos-icons">Logos Icons</h2>
+            <div v-if="filteredLogosIcons.length" class="grid-container-create-columns">
+                <div v-for="(iconName, index) in filteredLogosIcons" :key="index" class="icon">
+                    <span :class="'icon-' + iconName"></span>
+                    <span>{{ iconName }}</span>
                 </div>
             </div>
+            <p v-else class="system-message warning">No matches found in this font!</p>
         </CmdWidthLimitationWrapper>
     </main>
 </template>
 
 <script>
 // import data
-//import baseIcons from "./src/fonts/base-iconfont/base-iconfont.json"
-//import editmodeIcons from "./src/fonts/editmode-iconfont/editmode-iconfont.json"
+import baseIcons from "./src/fonts/base-iconfont/base-icon-classes.json"
+import editmodeIcons from "./src/fonts/editmode-iconfont/editmode-icon-classes.json"
 import logosIcons from "./src/fonts/logos-iconfont/logos-icon-classes.json"
 
 export default {
@@ -70,8 +78,8 @@ export default {
     data() {
         return {
             filterIcons: "",
-            sortedFrameworkIcons: [], //this.sortIcons(baseIcons),
-            sortedEditmodeIcons: [], //this.sortIcons(editmodeIcons),
+            sortedFrameworkIcons: this.sortIcons(baseIcons),
+            sortedEditmodeIcons: this.sortIcons(editmodeIcons),
             sortedLogosIcons: this.sortIcons(logosIcons),
             filterIconsByFont: [1, 2],
             listOfIconfonts: [
@@ -107,7 +115,7 @@ export default {
 
             if (filterTerm) {
                 return iconFont.filter((item) => {
-                    return item.name.toLowerCase().includes(filterTerm)
+                    return item.toLowerCase().includes(filterTerm)
                 })
             }
             return iconFont
@@ -115,7 +123,7 @@ export default {
         sortIcons(icons) {
             return icons.sort((a, b) => {
                 // compare icon-names to sort alphabetical
-                return a.name.localeCompare(b.name)
+                return a.localeCompare(b)
             })
         }
     }
@@ -124,6 +132,18 @@ export default {
 
 <style>
 #iconfont-overview {
+    .filter {
+        margin-top: var(--default-margin);
+        display: flex;
+        gap: var(--default-gap);
+        margin-left: 0;
+
+        li {
+            margin: 0;
+            list-style-type: none;
+        }
+    }
+
     section {
         padding-top: 2rem;
 
