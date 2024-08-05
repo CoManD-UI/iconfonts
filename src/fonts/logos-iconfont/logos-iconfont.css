@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('logos-iconfont.woff?cu3x60') format('woff');
+  src:  url('logos-iconfont.woff?yds2rj') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,17 +24,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-github:before {
+  content: "\b129";
+}
+.icon-malt:before {
+  content: "\b12a";
+}
+.icon-x:before {
+  content: "\b12b";
+}
+.icon-x-circle:before {
+  content: "\b12c";
+}
 .icon-freelancermap:before {
   content: "\b127";
 }
 .icon-wellfound:before {
   content: "\b128";
-}
-.icon-x:before {
-  content: "\b121";
-}
-.icon-x-circle:before {
-  content: "\b122";
 }
 .icon-freelance:before {
   content: "\b126";
@@ -132,6 +138,4 @@
 .icon-youtube:before {
   content: "\b11f";
 }
-.icon-github:before {
-  content: "\b120";
-}
+
