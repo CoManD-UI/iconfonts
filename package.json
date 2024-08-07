@@ -1,6 +1,6 @@
 {
   "name": "comand-ui-iconfonts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "license": "GPL-3.0-only",
   "author": "CoManD UI",
@@ -22,7 +22,6 @@
     "clickout-event": "^1.1.2",
     "comand-component-library": "^4.0.27",
     "comand-frontend-framework": "^4.0.63",
-    "comand-ui-iconfonts": "^1.0.3",
     "vue": "^3.2.31"
   },
   "devDependencies": {

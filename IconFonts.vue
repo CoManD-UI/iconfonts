@@ -63,6 +63,15 @@
                 </div>
             </div>
             <p v-else class="system-message warning">No matches found in this font!</p>
+            <hr/>
+            <h2 id="medical-icons">Medical Icons</h2>
+            <div v-if="filteredMedicalIcons.length" class="grid-container-create-columns">
+                <div v-for="(iconName, index) in filteredMedicalIcons" :key="index" class="icon">
+                    <span :class="'icon-' + iconName"></span>
+                    <span>{{ iconName }}</span>
+                </div>
+            </div>
+            <p v-else class="system-message warning">No matches found in this font!</p>
         </CmdWidthLimitationWrapper>
     </main>
 </template>
@@ -72,6 +81,7 @@
 import baseIcons from "./src/fonts/base-iconfont/base-icon-classes.json"
 import editmodeIcons from "./src/fonts/editmode-iconfont/editmode-icon-classes.json"
 import logosIcons from "./src/fonts/logos-iconfont/logos-icon-classes.json"
+import medicalIcons from "./src/fonts/medical-iconfont/medical-icon-classes.json"
 
 export default {
     name: "IconFonts",
@@ -81,6 +91,7 @@ export default {
             sortedFrameworkIcons: this.sortIcons(baseIcons),
             sortedEditmodeIcons: this.sortIcons(editmodeIcons),
             sortedLogosIcons: this.sortIcons(logosIcons),
+            sortedMedicalIcons: this.sortIcons(medicalIcons),
             filterIconsByFont: [1, 2],
             listOfIconfonts: [
                 {
@@ -94,6 +105,10 @@ export default {
                 {
                     text: "Logos Iconfont",
                     value: 3
+                },
+                {
+                    text: "Medical Iconfont",
+                    value: 4
                 }
             ]
         }
@@ -107,6 +122,9 @@ export default {
         },
         filteredLogosIcons() {
             return this.filteredIcons(this.sortedLogosIcons)
+        },
+        filteredMedicalIcons() {
+            return this.filteredIcons(this.sortedMedicalIcons)
         }
     },
     methods: {

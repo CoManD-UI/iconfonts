@@ -1,0 +1,103 @@
+/* logos-iconfont.css - last update: 2022/09/22 - IT IS NOT RECOMMENDED TO EDIT THIS FILE (TO AVOID TROUBLESHOOTING AFTER UPDATING) - DO CHANGES IN template.css OR YOUR OWN iconfont-css-file */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('medical-iconfont.woff?2v6xzc') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  unicode-range: U+b???;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-aesculapius:before {
+  content: "\b218";
+}
+.icon-abnormal-estrous:before {
+  content: "\b200";
+}
+.icon-abortion-magnifier:before {
+  content: "\b201";
+}
+.icon-cancer-prevention:before {
+  content: "\b202";
+}
+.icon-consultation-hour:before {
+  content: "\b203";
+}
+.icon-cryopreservation:before {
+  content: "\b204";
+}
+.icon-embryo-speeech-bubble:before {
+  content: "\b205";
+}
+.icon-emergency-speech-bubble:before {
+  content: "\b206";
+}
+.icon-female:before {
+  content: "\b207";
+}
+.icon-genders:before {
+  content: "\b208";
+}
+.icon-hair-loss:before {
+  content: "\b209";
+}
+.icon-insemination-circle:before {
+  content: "\b20a";
+}
+.icon-in-vitro-fertilization:before {
+  content: "\b20b";
+}
+.icon-male:before {
+  content: "\b20c";
+}
+.icon-medical-checklist:before {
+  content: "\b20d";
+}
+.icon-medical-service:before {
+  content: "\b20e";
+}
+.icon-medikit:before {
+  content: "\b20f";
+}
+.icon-menopause:before {
+  content: "\b210";
+}
+.icon-mens-health:before {
+  content: "\b211";
+}
+.icon-onkologische-nachsorge:before {
+  content: "\b212";
+}
+.icon-pcos:before {
+  content: "\b213";
+}
+.icon-pill-circle:before {
+  content: "\b214";
+}
+.icon-pill-speech-bubble:before {
+  content: "\b215";
+}
+.icon-pregnancy-prevention:before {
+  content: "\b216";
+}
+.icon-stethoscope:before {
+  content: "\b217";
+}
+
+

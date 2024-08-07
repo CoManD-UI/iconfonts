@@ -23,8 +23,8 @@ import './src/fonts/editmode-iconfont/editmode-iconfont.css'
 /* import additional iconfont containing company-logos */
 import './src/fonts/logos-iconfont/logos-iconfont.css'
 
-/* import additional iconfont containing editmode-icons */
-import 'comand-ui-iconfonts/editmode-iconfont/editmode-iconfont.css'
+/* import additional iconfont containing medical-icons */
+import './src/fonts//medical-iconfont/medical-iconfont.css'
 /* begin imports from prims-plugin (for styling syntax) ---------------------------------------------------------------------------------------- */
 // import "prismjs/themes/prism-twilight.css"
 /* end imports from prims-plugin (for styling syntax) ---------------------------------------------------------------------------------------- */
