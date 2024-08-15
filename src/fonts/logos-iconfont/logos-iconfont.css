@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('logos-iconfont.woff?yds2rj') format('woff');
+  src:  url('logos-iconfont.woff?cqnbel') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-upwork:before {
+  content: "\b12d";
+}
 .icon-github:before {
   content: "\b129";
 }
@@ -138,4 +141,3 @@
 .icon-youtube:before {
   content: "\b11f";
 }
-
