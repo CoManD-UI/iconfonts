@@ -1,8 +1,8 @@
-/* logos-iconfont.css - last update: 2022/09/22 - IT IS NOT RECOMMENDED TO EDIT THIS FILE (TO AVOID TROUBLESHOOTING AFTER UPDATING) - DO CHANGES IN template.css OR YOUR OWN iconfont-css-file */
+/* logos-iconfont.css - last update: 2024/09/26 - IT IS NOT RECOMMENDED TO EDIT THIS FILE (TO AVOID TROUBLESHOOTING AFTER UPDATING) - DO CHANGES IN template.css OR YOUR OWN iconfont-css-file */
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('logos-iconfont.woff?cqnbel') format('woff');
+  src:  url('logos-iconfont.woff?5pdnqx') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-jsdelivr:before {
+  content: "\b119";
+}
+.icon-npm:before {
+  content: "\b11a";
+}
 .icon-upwork:before {
   content: "\b12d";
 }

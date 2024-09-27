@@ -33,13 +33,13 @@
                 />
             </div>
             <ul class="filter">Available Iconfonts:
-                <li><a href="#framework-icons">Framework ({{ filteredFrameworkIcons.length }})</a></li>
+                <li><a href="#base-icons">Base ({{ filteredBaseIcons.length }})</a></li>
                 <li><a href="#editmode-icons">Editmode ({{ filteredEditmodeIcons.length }})</a></li>
                 <li><a href="#logos-icons">Logos ({{ filteredLogosIcons.length }})</a></li>
             </ul>
-            <h2 id="framework-icons">Framework Icons</h2>
-            <div v-if="filteredFrameworkIcons.length" class="grid-container-create-columns">
-                <div v-for="(iconName, index) in filteredFrameworkIcons" :key="index" class="icon">
+            <h2 id="base-icons">Base Icons</h2>
+            <div v-if="filteredBaseIcons.length" class="grid-container-create-columns">
+                <div v-for="(iconName, index) in filteredBaseIcons" :key="index" class="icon">
                     <span :class="'icon-' + iconName"></span>
                     <span>{{ iconName }}</span>
                 </div>
@@ -88,7 +88,7 @@ export default {
     data() {
         return {
             filterIcons: "",
-            sortedFrameworkIcons: this.sortIcons(baseIcons),
+            sortedBaseIcons: this.sortIcons(baseIcons),
             sortedEditmodeIcons: this.sortIcons(editmodeIcons),
             sortedLogosIcons: this.sortIcons(logosIcons),
             sortedMedicalIcons: this.sortIcons(medicalIcons),
@@ -114,8 +114,8 @@ export default {
         }
     },
     computed: {
-        filteredFrameworkIcons() {
-            return this.filteredIcons(this.sortedFrameworkIcons)
+        filteredBaseIcons() {
+            return this.filteredIcons(this.sortedBaseIcons)
         },
         filteredEditmodeIcons() {
             return this.filteredIcons(this.sortedEditmodeIcons)
