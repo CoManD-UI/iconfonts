@@ -1,10 +1,10 @@
-/* base-iconfont.css - last update: 2024/07/10
+/* base-iconfont.css - last update: 2024/10/31
 IT IS NOT RECOMMENDED TO EDIT THIS FILE (TO AVOID TROUBLESHOOTING AFTER UPDATING) - DO CHANGES IN template.css OR YOUR OWN iconfont-css-file
 */
 
 @font-face {
 	font-family: 'icomoon';
-	src: url('base-iconfont.woff?38w2fw') format('woff');
+	src: url('base-iconfont.woff?lun43g') format('woff');
     font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -24,7 +24,15 @@ IT IS NOT RECOMMENDED TO EDIT THIS FILE (TO AVOID TROUBLESHOOTING AFTER UPDATING
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-car:before {
+  content: "\a221";
+}
+.icon-family:before {
+  content: "\a222";
+}
+.icon-handcuffs:before {
+  content: "\a223";
+}
 .icon-wireframe:before {
   content: "\a220";
 }

@@ -2,7 +2,7 @@
 import "comand-frontend-framework/styles"
 
 import { createApp } from 'vue'
-import App from './IconFonts.vue'
+import App from './src/IconFonts.vue'
 
 /* begin imports from comand-component-library ---------------------------------------------------------------------------------------- */
 /* import css for global-styles */

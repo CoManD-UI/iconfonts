@@ -36,6 +36,7 @@
                 <li><a href="#base-icons">Base ({{ filteredBaseIcons.length }})</a></li>
                 <li><a href="#editmode-icons">Editmode ({{ filteredEditmodeIcons.length }})</a></li>
                 <li><a href="#logos-icons">Logos ({{ filteredLogosIcons.length }})</a></li>
+                <li><a href="#medical-icons">Medical ({{ filteredMedicalIcons.length }})</a></li>
             </ul>
             <h2 id="base-icons">Base Icons</h2>
             <div v-if="filteredBaseIcons.length" class="grid-container-create-columns">
@@ -78,10 +79,10 @@
 
 <script>
 // import data
-import baseIcons from "./src/fonts/base-iconfont/base-icon-classes.json"
-import editmodeIcons from "./src/fonts/editmode-iconfont/editmode-icon-classes.json"
-import logosIcons from "./src/fonts/logos-iconfont/logos-icon-classes.json"
-import medicalIcons from "./src/fonts/medical-iconfont/medical-icon-classes.json"
+import baseIcons from "./fonts/base-iconfont/base-icon-classes.json"
+import editmodeIcons from "./fonts/editmode-iconfont/editmode-icon-classes.json"
+import logosIcons from "./fonts/logos-iconfont/logos-icon-classes.json"
+import medicalIcons from "./fonts/medical-iconfont/medical-icon-classes.json"
 
 export default {
     name: "IconFonts",

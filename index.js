@@ -1,2 +1,2 @@
 // export components
-export { default as IconFonts } from '/IconFonts.vue'
+export { default as IconFonts } from '/src/IconFonts.vue'
